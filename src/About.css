@@ -1,0 +1,166 @@
+.aboutme {
+    background-color: rgb(22, 22, 22);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+
+.aboutcontent {
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutcontent-txt {
+    height: 275px;
+    width: 500px;
+}
+
+.aboutcontent h2 {
+    font-family: poppins;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+}
+
+
+.aboutcontent p {
+    padding-bottom: 15px;
+    font-family: poppins;
+    font-size: 19px;
+}
+
+.aboutcontent-txt h2 div {
+    margin-left: 25px;
+    width: 200px;
+    height: 2px;
+    background-color: white;
+}
+
+.aboutcontent img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.more {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px 7px 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 17px;
+    font-family: poppins;
+    font-weight: 600;
+}
+
+.more .arrow-icon {
+    /*  */
+    font-size: 17px;
+    display: flex;
+    transition: 0.3s ease;
+}
+
+.more:hover .arrow-icon {
+    rotate: 45deg;
+}
+
+
+/* RESPONSIVE CODE */
+
+@media (max-width: 768px) {
+    .aboutme {
+        width: 100%;
+        top: 170vh;
+        height: 130vh;
+        background-color: rgb(22, 22, 22);
+    }
+
+    .aboutme.menu-active {
+        transition-duration: 0.6s;
+        transform: translate(-50%, 200px);
+    }
+
+
+    .aboutcontent {
+        width: 70%;
+        height: 130vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .aboutcontent img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .aboutcontent-txt {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .aboutme {
+        width: 100%;
+        top: 150vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutcontent img {
+        width: 100%;
+    }
+
+    .aboutcontent {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+
+    .aboutcontent-txt {
+        width: 100%;
+    }
+
+    .aboutcontent-txt h2 div {
+        width: 125px;
+    }
+
+    .aboutcontent h2 {
+        font-family: poppins;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .aboutcontent p {
+        font-family: poppins;
+        font-size: 17px;
+    }
+
+    .more {
+        /* font-family: poppins; */
+        font-size: 16px;
+        padding: 7px 10px 7px 20px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 320px){
+    .aboutme{
+        top: 140vh;
+    }
+}

@@ -1,0 +1,230 @@
+.intro {
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    transition: transform 0.8s ease-in-out;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro .profile-pic img {
+    width: 350px;
+    animation: animate 5s ease-in-out infinite;
+    -webkit-mask-image: url(/public/blob3.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 118%;
+}
+
+
+.intro-txt {
+    width: 650px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: font1;
+}
+
+.intro-txt h1 {
+    font-size: 75px;
+}
+
+.intro-txt p {
+    padding-top: 10px;
+    font-family: figtree;
+    font-size: 22.5px;
+}
+
+.intro-txt .icons-links {
+    font-size: 35px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.intro-txt .icons-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.intro-txt .icons-links li a:hover {
+    color: rgb(11, 186, 255);
+}
+     
+.intro-txt .tech-stacks {
+    width: 650px;
+    display: flex;
+    align-items: center;
+    font-family: poppins;
+    font-size: 17px;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+.intro-txt .tech-stacks ul{  
+    gap: 50px;
+    display: flex;
+    /* justify-content: spac; */
+    list-style: none;
+}
+
+.intro-txt .tech-stacks p{
+    margin-right: 50px;
+    border-right: 2px solid white;
+    width: 170px;
+}
+
+.intro-txt .tech-stacks li{
+    transition: transform 0.5s ease-in-out;
+}
+
+.intro-txt .tech-stacks li:hover{
+    transform: translateY(-10px);
+}
+
+/* RESPONSIVE CODE */
+
+@media (max-width: 1108px) {
+    .intro {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -40%);
+    }
+
+    .intro.menu-active {
+        transition-duration: 0.6s;
+        transform: translate(-50%, 50px);
+    }
+}
+
+@media (max-width: 992px) {
+    .intro .profile-pic img {
+        width: 100%;
+    }
+
+    .intro-txt {
+        width: 100%;
+        justify-content: space-evenly;
+        height: 350px;
+    }
+
+    .intro-txt .tech-stacks{
+        width: 100%;
+    }
+
+    .intro-txt h1 {
+        font-size: 55px;
+    }
+
+    .intro-txt p {
+        padding-top: 10px;
+        font-family: figtree;
+        font-size: 20px;
+    }
+
+    .intro-txt ul {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .intro {
+        flex-direction: column-reverse;
+        left: 50%;
+        top: 120px;
+        height: fit-content;
+        transform: translate(-50%, 0%);
+        gap: 20px;
+    }
+
+    .intro-txt {
+        text-align: center;
+        width: 100%;
+        justify-content: space-evenly;
+        height: 350px;
+    }
+
+    .intro-txt .tech-stacks{
+        width: 100%;
+    }
+
+    .intro-txt h1{
+        font-size: 55px;
+    }
+
+    .intro-txt ul {
+        justify-content: center;
+    }
+
+    .intro.menu-active {
+        transition-duration: 0.6s;
+        transform: translate(-50%, 200px);
+    }
+
+    .intro .profile-pic img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .intro{
+        /*  */
+    }
+
+    .intro-txt {
+        height: 350px;
+        text-align: center;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .intro-txt .tech-stacks{
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    .intro-txt .tech-stacks p{
+        border-bottom: 2px solid white;
+        padding-bottom: 10px;
+        border-right: none;
+        width: 170px;
+        margin-right:0;
+    }
+
+    .intro-txt .tech-stacks ul{
+        margin-top: 25px;
+        
+    }
+
+    .intro-txt h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 320px){
+    .intro{
+        /*  */
+    }
+
+    .intro .profile-pic img {
+        width: 100%;
+    }
+
+    .intro-txt .tech-stacks{
+        width: 100%;
+    }
+
+    .intro-txt .tech-stacks ul{
+        width: 100%;
+        gap: 10px;
+    }
+}

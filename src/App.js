@@ -1,24 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Header from "./Header";
+import Introduction from "./Introduction";
+import About from './About';
+import Project from './Project';
+import HashLoader from "react-spinners/HashLoader";
+import "./App.css"
 
-function App() {
+const App = () => {
+  const [menuIsActive, setMenuIsActive] = useState(false);
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="loader">
+        {
+          loading ?
+
+          <div style={{
+            position: 'fixed',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+          }}>
+            <HashLoader
+              color={"#FFFFFF"}
+              loading={loading}
+              size={50}
+              aria-label="Loading Spinner"
+              data-testid="loader"
+            />
+          </div>
+            :
+            <>
+              <div className="box1">
+                <Header toggleMenu={() => setMenuIsActive(!menuIsActive)} />
+                <Introduction menuIsActive={menuIsActive} />
+
+              </div>
+
+              <div className='box2'>
+                <About menuIsActive={menuIsActive} />
+              </div>
+
+              <div className='box2'>
+                <Project menuIsActive={menuIsActive} />
+              </div>
+            </>
+        }
+      </div>
+    </>
   );
 }
 
