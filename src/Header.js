@@ -44,9 +44,9 @@ const Header = ({ toggleMenu }) => {
                         <ul>
                             <li><a href="#" className="menu-item">Home</a></li>
 
-                            <li><a href="#" className="menu-item">Projects</a></li>
-
                             <li><a href="#" className="menu-item">About</a></li>
+
+                            <li><a href="#" className="menu-item">Projects</a></li>
 
                             <li><a href="#" className="menu-item">Contact</a></li>
                         </ul>
