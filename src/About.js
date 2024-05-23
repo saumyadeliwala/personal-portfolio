@@ -16,7 +16,7 @@ const About = ({ menuIsActive }) => {
 
                     <button className='more'>MORE <span className='arrow-icon'><CiLocationArrow1 /></span></button>
                 </div>
-                <img src="images/abt.jpg" />
+                <img src="images/abt.jpg" alt="" />
 
             </div>
         </section>

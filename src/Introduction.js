@@ -10,7 +10,7 @@ const Introduction = ({ menuIsActive }) => {
             <section className={`intro ${menuIsActive ? 'menu-active' : ''}`}>
 
                 <div className="profile-pic">
-                    <img src="/images/me.jpg" alt="" className='image1' />
+                    <img src="images/me.jpg" alt="" className='image1' />
                 </div>
 
                 <div className="intro-txt">
