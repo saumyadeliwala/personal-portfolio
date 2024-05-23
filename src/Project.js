@@ -30,7 +30,7 @@ const Project = ({ menuIsActive }) => {
 
                         </div>
 
-                        <img src="/crypto.png" />
+                        <img src="/crypto.png" alt="" />
                     </div>
 
                     <br /><br /><br /><br /><br /><br /><hr /><br /><br /><br /><br /><br /><br />
@@ -53,7 +53,7 @@ const Project = ({ menuIsActive }) => {
 
                         </div>
 
-                        <img src="/file.png" />
+                        <img src="/file.png" alt=""/>
                     </div>
 
                     <br /><br /><br /><br /><br /><br /><hr /><br /><br /><br /><br /><br /><br />
@@ -77,7 +77,7 @@ const Project = ({ menuIsActive }) => {
 
                         </div>
 
-                        <img src="/luxe.png" />
+                        <img src="/luxe.png" alt=""/>
                     </div>
 
                 </div>

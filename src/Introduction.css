@@ -175,9 +175,7 @@
 
 @media (max-width: 480px) {
 
-    .intro{
-        /*  */
-    }
+
 
     .intro-txt {
         height: 350px;
@@ -211,9 +209,7 @@
 }
 
 @media (max-width: 320px){
-    .intro{
-        /*  */
-    }
+
 
     .intro .profile-pic img {
         width: 100%;
