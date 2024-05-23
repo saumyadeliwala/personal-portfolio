@@ -13,11 +13,27 @@
 .intro .profile-pic img {
     width: 350px;
     animation: animate 5s ease-in-out infinite;
-    -webkit-mask-image: url(/public/blob3.svg);
+    transition: all 1s ease-in-out ;
+    border: 2px solid white;
+    /* -webkit-mask-image: url(/public/blob3.svg);
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 118%;
+    -webkit-mask-size: 118%; */
 }
 
+@keyframes animate{
+    0%,100%{
+        border-radius: 51% 49% 19% 81% / 30% 69% 31% 70% ;
+    }
+    25%{
+        border-radius: 63% 37% 46% 54% / 54% 54% 46% 46%  ;
+    }
+    50%{
+        border-radius: 46% 54% 74% 26% / 30% 74% 26% 70%  ;
+    }
+    75%{
+        border-radius: 33% 67% 27% 73% / 75% 32% 68% 25%  ; 
+    }
+}
 
 .intro-txt {
     width: 650px;
