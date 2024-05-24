@@ -152,7 +152,7 @@
 @media (max-width: 768px) 
 {
     .intro {
-        flex-direction: column-reverse;
+        flex-direction: column;
         left: 50%;
         top: 120px;
         height: fit-content;
