@@ -201,6 +201,11 @@
         font-size:14px;
     }
 
+    .project-content-2 p3 {
+        font-size: 20px;
+        display: flex;
+    }
+
     .project-content-1 p3 a, .project-content-2 p3 a, .project-content-3 p3 a{
         font-size: 20px;
     }
