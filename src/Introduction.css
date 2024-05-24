@@ -192,6 +192,12 @@
 @media (max-width: 480px) {
     .intro {
         top: 150px;
+        /* padding: 50px; */
+        /* border: 2px solid white; */
+        gap: 80px;
+    }
+    .intro .profile-pic{
+
     }
 
     .intro-txt {

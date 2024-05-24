@@ -159,6 +159,12 @@
     }
 }
 
+@media (max-width: 391px){
+    .aboutme {
+        top: 130vh;
+    }
+}
+
 @media (max-width: 320px){
     .aboutme{
         top: 140vh;
