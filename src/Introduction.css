@@ -190,10 +190,12 @@
 }
 
 @media (max-width: 480px) {
-
-
+    .intro {
+        top: 150px;
+    }
 
     .intro-txt {
+        border: 2px solid white;
         height: 350px;
         text-align: center;
         width: 100%;
